@@ -11,9 +11,14 @@ let dailyTotalCost=0;
 
 function calculateMoney(ticket) {
 
+    // note: If no ticket sale then give and sad massege and close execution of Ticket acount operation 
+    
     if(ticket<=0){
         return "Today No ticket sale. and faces lose lot's of amount of this zoo authority."
     }
+
+    // node: if ticket sale is good amount then calculate all the day revenue and pay the maintanance cost
+    
     else{
         TotalIncome = everySingleTicketPrice*ticket;
         staffLaunchTotalCost= staff * everySingleStaffLaunch;
